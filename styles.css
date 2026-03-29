@@ -25,7 +25,7 @@ h1 {
   text-align: center;
   font-size: 22px;
   font-weight: 800;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
@@ -119,10 +119,17 @@ h1 {
 .mopping  .section-header { background: #6E8B52; }  .mopping  { border-color: #6E8B52; }
 .general  .section-header { background: #7A8A8E; }  .general  { border-color: #7A8A8E; }
 .hair     .section-header { background: #8A7B6B; }  .hair     { border-color: #8A7B6B; }
+.windows  .section-header { background: #6A8B9A; }  .windows  { border-color: #6A8B9A; }
 .naph     .section-header { background: #7A7268; }  .naph     { border-color: #7A7268; }
 .packing  .section-header { background: #8B6F5E; }  .packing  { border-color: #8B6F5E; }
 .others   .section-header { background: #7A8A8E; }  .others   { border-color: #7A8A8E; }
 .last     .section-header { background: #5C5C5C; }  .last     { border-color: #5C5C5C; }
+.essentials  .section-header { background: #4B6A88; }  .essentials  { border-color: #4B6A88; }
+.food        .section-header { background: #C08B3E; }  .food        { border-color: #C08B3E; }
+.protection  .section-header { background: #5A8A6A; }  .protection  { border-color: #5A8A6A; }
+.tech        .section-header { background: #5B6FA0; }  .tech        { border-color: #5B6FA0; }
+.hygiene     .section-header { background: #4A8B8D; }  .hygiene     { border-color: #4A8B8D; }
+.kid         .section-header { background: #7C6B8A; }  .kid         { border-color: #7C6B8A; }
 
 .notes {
   margin-top: auto;
