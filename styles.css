@@ -104,25 +104,25 @@ h1 {
   margin-left: auto;
 }
 
-/* Section colors */
-.parking  .section-header { background: #727272; }  .parking  { border-color: #727272; }
-.hall     .section-header { background: #276EF1; }  .hall     { border-color: #276EF1; }
-.bed-m    .section-header { background: #944DE7; }  .bed-m    { border-color: #944DE7; }
-.bed-o    .section-header { background: #0E1FC1; }  .bed-o    { border-color: #0E1FC1; }
-.kitchen  .section-header { background: #DE1135; }  .kitchen  { border-color: #DE1135; }
-.bath-m   .section-header { background: #0095A4; }  .bath-m   { border-color: #0095A4; }
-.bath-o   .section-header { background: #01B8CA; }  .bath-o   { border-color: #01B8CA; }
-.balcony  .section-header { background: #009A51; }  .balcony  { border-color: #009A51; }
-.play     .section-header { background: #DF9500; }  .play     { border-color: #DF9500; }
-.washing  .section-header { background: #E65300; }  .washing  { border-color: #E65300; }
-.vacuum   .section-header { background: #744C3A; }  .vacuum   { border-color: #744C3A; }
-.mopping  .section-header { background: #5B9500; }  .mopping  { border-color: #5B9500; }
-.general  .section-header { background: #6C7C83; }  .general  { border-color: #6C7C83; }
-.hair     .section-header { background: #5E5E5E; }  .hair     { border-color: #5E5E5E; }
-.naph     .section-header { background: #5E5E5E; }  .naph     { border-color: #5E5E5E; }
-.packing  .section-header { background: #744C3A; }  .packing  { border-color: #744C3A; }
-.others   .section-header { background: #6C7C83; }  .others   { border-color: #6C7C83; }
-.last     .section-header { background: #4B4B4B; }  .last     { border-color: #4B4B4B; }
+/* Section colors — earthy muted palette */
+.parking  .section-header { background: #6B7280; }  .parking  { border-color: #6B7280; }
+.hall     .section-header { background: #4B6A88; }  .hall     { border-color: #4B6A88; }
+.bed-m    .section-header { background: #7C6B8A; }  .bed-m    { border-color: #7C6B8A; }
+.bed-o    .section-header { background: #5B6FA0; }  .bed-o    { border-color: #5B6FA0; }
+.kitchen  .section-header { background: #B85450; }  .kitchen  { border-color: #B85450; }
+.bath-m   .section-header { background: #4A8B8D; }  .bath-m   { border-color: #4A8B8D; }
+.bath-o   .section-header { background: #5A9EA3; }  .bath-o   { border-color: #5A9EA3; }
+.balcony  .section-header { background: #5A8A6A; }  .balcony  { border-color: #5A8A6A; }
+.play     .section-header { background: #C08B3E; }  .play     { border-color: #C08B3E; }
+.washing  .section-header { background: #C27044; }  .washing  { border-color: #C27044; }
+.vacuum   .section-header { background: #8B6F5E; }  .vacuum   { border-color: #8B6F5E; }
+.mopping  .section-header { background: #6E8B52; }  .mopping  { border-color: #6E8B52; }
+.general  .section-header { background: #7A8A8E; }  .general  { border-color: #7A8A8E; }
+.hair     .section-header { background: #8A7B6B; }  .hair     { border-color: #8A7B6B; }
+.naph     .section-header { background: #7A7268; }  .naph     { border-color: #7A7268; }
+.packing  .section-header { background: #8B6F5E; }  .packing  { border-color: #8B6F5E; }
+.others   .section-header { background: #7A8A8E; }  .others   { border-color: #7A8A8E; }
+.last     .section-header { background: #5C5C5C; }  .last     { border-color: #5C5C5C; }
 
 .notes {
   margin-top: auto;
