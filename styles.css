@@ -130,6 +130,7 @@ h1 {
 .tech        .section-header { background: #5B6FA0; }  .tech        { border-color: #5B6FA0; }
 .hygiene     .section-header { background: #4A8B8D; }  .hygiene     { border-color: #4A8B8D; }
 .kid         .section-header { background: #7C6B8A; }  .kid         { border-color: #7C6B8A; }
+.before      .section-header { background: #5C5C5C; }  .before      { border-color: #5C5C5C; }
 
 .notes {
   margin-top: auto;
