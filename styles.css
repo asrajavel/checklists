@@ -159,19 +159,6 @@ h1 {
 .kid         .section-header { background: #7C6B8A; }  .kid         { border-color: #7C6B8A; }
 .before      .section-header { background: #5C5C5C; }  .before      { border-color: #5C5C5C; }
 
-.back-link {
-  display: inline-block;
-  margin-bottom: 12px;
-  font-size: 13px;
-  font-weight: 600;
-  color: #888;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.3px;
-}
-
-.back-link:hover { color: #555; }
-
 .notes {
   display: none;
   margin-top: auto;
@@ -199,5 +186,4 @@ h1 {
 
 @media print {
   body { width: auto; height: auto; min-height: 100vh; padding: 0; }
-  .back-link { display: none; }
 }
