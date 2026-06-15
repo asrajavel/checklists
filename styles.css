@@ -158,6 +158,8 @@ h1 {
 .hygiene     .section-header { background: #4A8B8D; }  .hygiene     { border-color: #4A8B8D; }
 .kid         .section-header { background: #7C6B8A; }  .kid         { border-color: #7C6B8A; }
 .before      .section-header { background: #5C5C5C; }  .before      { border-color: #5C5C5C; }
+.uniform     .section-header { background: #4B6A88; }  .uniform     { border-color: #4B6A88; }
+.school-bag  .section-header { background: #C08B3E; }  .school-bag  { border-color: #C08B3E; }
 
 .notes {
   display: none;
