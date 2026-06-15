@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
-
 @page {
   size: A4 portrait;
   margin: 8mm;
@@ -28,16 +26,16 @@ body {
 }
 
 .columns {
-  column-count: 1 !important;
+  column-count: 1;
 }
 
 @media (min-width: 480px) {
-  .columns { column-count: 2 !important; }
+  .columns { column-count: 2; }
   body { padding: 20px; }
 }
 
 @media (min-width: 700px) {
-  .columns { column-count: 3 !important; }
+  .columns { column-count: 3; }
   body { max-width: 900px; padding: 24px; }
 }
 
@@ -151,6 +149,7 @@ h1 {
 .naph     .section-header { background: #7A7268; }  .naph     { border-color: #7A7268; }
 .packing  .section-header { background: #8B6F5E; }  .packing  { border-color: #8B6F5E; }
 .others   .section-header { background: #7A8A8E; }  .others   { border-color: #7A8A8E; }
+.morning  .section-header { background: #C08B3E; }  .morning  { border-color: #C08B3E; }
 .last     .section-header { background: #5C5C5C; }  .last     { border-color: #5C5C5C; }
 .essentials  .section-header { background: #4B6A88; }  .essentials  { border-color: #4B6A88; }
 .food        .section-header { background: #C08B3E; }  .food        { border-color: #C08B3E; }
@@ -159,6 +158,19 @@ h1 {
 .hygiene     .section-header { background: #4A8B8D; }  .hygiene     { border-color: #4A8B8D; }
 .kid         .section-header { background: #7C6B8A; }  .kid         { border-color: #7C6B8A; }
 .before      .section-header { background: #5C5C5C; }  .before      { border-color: #5C5C5C; }
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #888;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.back-link:hover { color: #555; }
 
 .notes {
   display: none;
@@ -187,4 +199,5 @@ h1 {
 
 @media print {
   body { width: auto; height: auto; min-height: 100vh; padding: 0; }
+  .back-link { display: none; }
 }
