@@ -11,14 +11,34 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background: #fff;
   color: #1a1a1a;
-  width: 210mm;
-  height: 297mm;
-  padding: 8mm;
+  padding: 16px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
+}
+
+@media print {
+  body {
+    width: 210mm;
+    height: 297mm;
+    padding: 8mm;
+  }
+}
+
+.columns {
+  column-count: 1 !important;
+}
+
+@media (min-width: 480px) {
+  .columns { column-count: 2 !important; }
+  body { padding: 20px; }
+}
+
+@media (min-width: 700px) {
+  .columns { column-count: 3 !important; }
+  body { max-width: 900px; padding: 24px; }
 }
 
 h1 {
@@ -38,7 +58,6 @@ h1 {
 }
 
 .columns {
-  column-count: 3;
   column-gap: 12px;
   column-fill: balance;
   flex: 1;
@@ -142,6 +161,7 @@ h1 {
 .before      .section-header { background: #5C5C5C; }  .before      { border-color: #5C5C5C; }
 
 .notes {
+  display: none;
   margin-top: auto;
   padding-top: 4px;
   border-top: none;
@@ -150,6 +170,10 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+@media print {
+  .notes { display: block; }
 }
 
 .note-line {
