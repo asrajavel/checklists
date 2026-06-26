@@ -4,12 +4,21 @@
 
   var items = document.querySelectorAll('.item');
 
+  function updateSections() {
+    document.querySelectorAll('.section').forEach(function (sec) {
+      var all = sec.querySelectorAll('.item');
+      var done = sec.querySelectorAll('.item.checked');
+      sec.classList.toggle('completed', all.length === done.length);
+    });
+  }
+
   function save() {
     var state = [];
     items.forEach(function (el, i) {
       if (el.classList.contains('checked')) state.push(i);
     });
     localStorage.setItem(key, JSON.stringify(state));
+    updateSections();
   }
 
   items.forEach(function (el, i) {
@@ -19,6 +28,7 @@
       save();
     });
   });
+  updateSections();
 
   var btn = document.createElement('button');
   btn.textContent = 'Reset';
@@ -26,6 +36,7 @@
   btn.addEventListener('click', function () {
     items.forEach(function (el) { el.classList.remove('checked'); });
     localStorage.removeItem(key);
+    updateSections();
   });
   document.querySelector('h1').insertAdjacentElement('afterend', btn);
 })();

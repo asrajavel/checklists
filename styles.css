@@ -164,6 +164,9 @@ h1 {
 .uniform     .section-header { background: #4B6A88; }  .uniform     { border-color: #4B6A88; }
 .school-bag  .section-header { background: #C08B3E; }  .school-bag  { border-color: #C08B3E; }
 
+.section.completed .section-header { opacity: 0.6; }
+.section.completed .section-header::after { background: rgba(255,255,255,0.5); }
+
 .item.checked { color: #aaa; }
 .item.checked::after { background: #888; border-color: #888; }
 
@@ -213,6 +216,8 @@ h1 {
   body { width: auto; height: auto; min-height: 100vh; padding: 0; }
   .columns { column-count: 3 !important; }
   .reset-btn { display: none !important; }
+  .section.completed .section-header { opacity: 1; }
+  .section.completed .section-header::after { background: #fff; }
   .item.checked { color: inherit; }
   .item.checked::after { background: transparent; border-color: #888; }
 }
