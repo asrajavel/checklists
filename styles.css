@@ -119,6 +119,7 @@ h1 {
   border-bottom: 1px dotted #e0e0e0;
 }
 
+.item { cursor: pointer; }
 .item:last-child { border-bottom: none; }
 
 .item::after {
@@ -163,6 +164,26 @@ h1 {
 .uniform     .section-header { background: #4B6A88; }  .uniform     { border-color: #4B6A88; }
 .school-bag  .section-header { background: #C08B3E; }  .school-bag  { border-color: #C08B3E; }
 
+.item.checked { color: #aaa; }
+.item.checked::after { background: #888; border-color: #888; }
+
+.reset-btn {
+  display: block;
+  margin: 0 auto 14px;
+  padding: 4px 18px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  color: #888;
+  cursor: pointer;
+}
+.reset-btn:hover { background: #f5f5f5; border-color: #aaa; color: #555; }
+
 .notes {
   display: none;
   margin-top: auto;
@@ -191,4 +212,7 @@ h1 {
 @media print {
   body { width: auto; height: auto; min-height: 100vh; padding: 0; }
   .columns { column-count: 3 !important; }
+  .reset-btn { display: none !important; }
+  .item.checked { color: inherit; }
+  .item.checked::after { background: transparent; border-color: #888; }
 }
