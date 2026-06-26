@@ -34,6 +34,7 @@
   btn.textContent = 'Reset';
   btn.className = 'reset-btn';
   btn.addEventListener('click', function () {
+    if (!confirm('Reset all items?')) return;
     items.forEach(function (el) { el.classList.remove('checked'); });
     localStorage.removeItem(key);
     updateSections();
