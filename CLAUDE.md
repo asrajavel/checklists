@@ -24,4 +24,4 @@ Deploy: push to `main` — GitHub Pages auto-deploys.
 - Section class names in CSS use the pattern: `.classname .section-header { background: #hex; }  .classname { border-color: #hex; }` on a single line.
 - Earthy, muted color palette for section headers.
 - Pages are print-optimized (A4, 3-column layout in print media).
-- No JavaScript in checklist pages — index.html has a service worker unregister script only.
+- Checklist pages load only the shared `checklist.js` (tap-to-tick, saved in localStorage by section + item name). index.html has no JavaScript.
