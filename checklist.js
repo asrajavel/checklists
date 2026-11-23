@@ -5,6 +5,10 @@
   var skipped = JSON.parse(localStorage.getItem(skipKey) || '[]');
 
   var items = document.querySelectorAll('.item');
+  // Save by "section|item" text, not position, so adding/removing items doesn't shift progress
+  function id(el) {
+    return el.closest('.section').querySelector('.section-header').textContent.trim() + '|' + el.textContent.trim();
+  }
 
   function updateSections() {
     document.querySelectorAll('.section').forEach(function (sec) {
@@ -16,8 +20,8 @@
 
   function indexesWith(cls) {
     var state = [];
-    items.forEach(function (el, i) {
-      if (el.classList.contains(cls)) state.push(i);
+    items.forEach(function (el) {
+      if (el.classList.contains(cls)) state.push(id(el));
     });
     return state;
   }
@@ -29,9 +33,9 @@
   }
 
   // Tap cycles: blank -> checked (packed) -> skipped (not taking) -> blank
-  items.forEach(function (el, i) {
-    if (checked.indexOf(i) !== -1) el.classList.add('checked');
-    else if (skipped.indexOf(i) !== -1) el.classList.add('skipped');
+  items.forEach(function (el) {
+    if (checked.indexOf(id(el)) !== -1) el.classList.add('checked');
+    else if (skipped.indexOf(id(el)) !== -1) el.classList.add('skipped');
     el.addEventListener('click', function () {
       if (el.classList.contains('checked')) {
         el.classList.remove('checked');
