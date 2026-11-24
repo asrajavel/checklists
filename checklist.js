@@ -62,3 +62,5 @@
   });
   document.querySelector('h1').insertAdjacentElement('afterend', btn);
 })();
+
+if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");

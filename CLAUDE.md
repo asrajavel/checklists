@@ -17,7 +17,6 @@ Deploy: push to `main` — GitHub Pages auto-deploys.
 1. Create a new `.html` file following the exact structure of existing pages (head meta tags, `<div class="columns">`, sections, notes block).
 2. Add a card link in `index.html` (inside `.grid`), with a matching `.card.<name>` border-color style.
 3. If new section classes are needed, add color rules to `styles.css` following the existing one-liner pattern.
-4. After any `styles.css` change, bump `styles.css?v=N` in every page's `<link>` so phones don't keep stale CSS.
 
 ## Conventions
 
@@ -25,4 +24,5 @@ Deploy: push to `main` — GitHub Pages auto-deploys.
 - Section class names in CSS use the pattern: `.classname .section-header { background: #hex; }  .classname { border-color: #hex; }` on a single line.
 - Earthy, muted color palette for section headers.
 - Pages are print-optimized (A4, 3-column layout in print media).
-- Checklist pages load only the shared `checklist.js` (tap-to-tick, saved in localStorage by section + item name). index.html has no JavaScript.
+- Checklist pages load only the shared `checklist.js` (tap-to-tick, saved in localStorage by section + item name). index.html has only the one-line `sw.js` registration.
+- `sw.js` is network-first with `no-cache`, so pushed changes show on the next load; its cache is only an offline fallback. No version bumping needed.
