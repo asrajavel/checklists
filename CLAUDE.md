@@ -17,6 +17,7 @@ Deploy: push to `main` — GitHub Pages auto-deploys.
 1. Create a new `.html` file following the exact structure of existing pages (head meta tags, `<div class="columns">`, sections, notes block).
 2. Add a card link in `index.html` (inside `.grid`), with a matching `.card.<name>` border-color style.
 3. If new section classes are needed, add color rules to `styles.css` following the existing one-liner pattern.
+4. After any `styles.css` change, bump `styles.css?v=N` in every page's `<link>` so phones don't keep stale CSS.
 
 ## Conventions
 
